@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+
+        <h2>Pessoas</h2>
+
+        <!-- Escopo = Estrutura da tabela em html - forma generica de falar bloco de codigo-->
+        <!--<table> = estrutura de uma tabela html-->
+        <!-- <tr> = linha de uma tabela-->
+        <!-- <td> = representa a celula da tabela (fica a esquerda)-->
+        <!-- <th> = Titulo da coluna (fica centralizado)-->
+        <table border="1">
+            <colgroup>
+                <col style="wight: 200px; background-color: blue";>
+                <col style="width:100px; background-color: green";>
+                <col style="wight:300px; background-color: red;">
+            </colgroup>
+            <tr>
+                <th>Fernando</th>
+                <th>27 anos</th>
+                <th>fernando@exemplo.com.br</th>
+            </tr>
+            <tr>
+                <th>Tatiane</th>
+                <th>37 anos</th>
+                <th>tatiane@exemplo.com.br</th>
+            </tr>
+            <tr>
+                <th>Monique</th>
+                <th>30 anos</th>
+                <th>bruna@exemplo.com.br</th>
+            </tr>
+        </table>
+
+        <h2>Tabuada soma 2</h2>
+        <table border="1">
+            <tr>
+                <th>Operação</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <th>2 + 0 =</th>
+                <th>2</th>
+            </tr>
+            <tr>
+                <th>2 + 1 =</th>
+                <th>3</th>
+            </tr>
+            <tr>
+                <th>2 + 2 =</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <th>2 + 3 =</th>
+                <th>5</th>
+            </tr>
+            <tr>
+                <th>2 + 4 =</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <th>2 + 5 =</th>
+                <th>7</th>
+            </tr>
+            <tr>
+                <th>2 + 6 =</th>
+                <th>8</th>
+            </tr>
+            <tr>
+                <th>2 + 7 =</th>
+                <th>9</th>
+            </tr>
+            <tr>
+                <th>2 + 8 =</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th>2 + 9 =</th>
+                <th>11</th>
+            </tr>
+        </table>
+
+        <h2> Times de Futebol</h2>
+        <!--<thead> = Define o cabeçalho da tabela-->
+        <!-- <tbody = Define o corpo da tabela -->
+            <!--<tfoot> = Define o rodaé da tabela-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="4">Classificação Times de Futebol</th>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                    <th>Saldo de Gols</th>
+                    <th>Vitórias</th>
+                </tr>
+            </thead>
+            <tr>
+                <th>Fuminense</th>
+                <th>20</th>
+                <th>9</th>
+                <th>3</th>
+            </tr>
+            <tbody>
+            <tr>
+                <th>Corinthians</th>
+                <th>70</th>
+                <th>25</th>
+                <th>20</th>
+            </tr>
+            <tr>
+                <th>Palmeiras</th>
+                <th>90</th>
+                <th>30</th>
+                <th>10</th>
+            </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4"> <!-- Formata linhas na tabela-->
+                        <a 
+                            href:"https://www.brasileirao.com.br/" target:"_blank">Acesse nosso site.</a> 
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>
