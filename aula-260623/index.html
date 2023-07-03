@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <!-- <form> -> Estrutura base de um formulário HTML -->
+    <!-- <input type="text"> -> Define um campo no formulário -->
+    <!-- <button> -> Botão -->
+    <form>
+        Teste: <!-- Define um modelo de numero que deve ter min. 4 e no max. 8 digitos -->
+        <input type="text" pattern="[0-9]{4,8}"> <br> 
+
+        Nome: <!-- type="text" define um campo para entrada de texto -->
+        <input type="text" name="nome" maxlength="10" placeholder="Digite aqui seu nome completo"> <br>
+        
+        E-mail: <!-- type="email" define um campo para entrada de email -->
+        <input type="email" name="email" placeholder="gabriel@example.com"> <br>
+        
+        Senha: <!-- type="password" define um campo para entrada de senha -->
+        <input type="password" name="senha" minlength="6"> <br>
+        
+        Idade: <!-- type="number" define um campo para entrada valores numericos -->
+        <input type="number" name="idade" min="0" max="150"> <br>
+        
+        Horário de Registro:<!-- type="time" define um campo para entrada de hora:minuto -->
+        <input type="time" value="15:00" disabled name="horario"> <br>
+
+        Data de Nascimento: <!-- type="date" define um campo para entrada de data -->
+        <input type="date" name="dataNascimento" min="2023-06-26" max="2023-07-26"> <br>
+
+        Telefone: <!-- type="tel" define um campo para entrada de telefone -->
+        <input type="tel" name="telefone"> <br>
+
+        URL da Foto: <!-- type="url" define um campo para entrada de endereços de internet (url) -->
+        <input type="url" name="foto"> <br>
+
+        Frente do RG: <!-- type="file" define um campo para entrada de arquivos -->
+        <input type="file" accept=".png, .jpg" multiple name="rg"> <br>
+
+        Escolha sua cor favorita: <!-- type="color" define um campo para entrada de valor hexadeciamal de uma cor -->
+        <input type="color" name="cor" value="#FF00FF"> <br>
+
+        Estado civil: <br> <!-- type="radio" define um campo de opção -->
+        Solteiro: <input type="radio" name="estado-civil" value="Solteiro"> <br>
+        Casado: <input type="radio" name="estado-civil" value="Casado"> <br>
+
+        Aceito os termos de uso:
+        <input type="checkbox"> <br> <!-- type="checkbox" define uma campo marcável -->
+        Nivel de Inglês: 1 <input type="range" min="1" max="5" step="0.5"> 5 <br>
+
+        Estado: <!-- <select> define um campo de seleção -->
+        <select name="estado">
+            <option disabled selected>Selecione um estado</option>
+            <option value="CE">Ceará</option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+        </select> <br>
+
+        Fale um pouco sobre você: <br> <!-- <textarea> define um campo para entrada texto longo -->
+        <textarea cols="30" rows="3" placeholder="Digite sua descrição">Texto padrão</textarea> <br>
+        
+        <!-- 
+            button -> Botão comum (auxlia na execução de um evento javascript)
+            submit -> Submete as informações do formulário
+            reset -> Limpar os campos de um formulário
+        -->
+        <button type="button">Não Faz Nada</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="button" value="Não Faz Nada">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+<!-- 
+    placeholder -> Define um texto explicativo para o campo
+    name -> Indica uma identificação para a informação no envio do formulário
+    value -> Indica o valor do campo
+    disabled -> Habilita/Desabilita um campo
+    min -> Define um numero minimo para campos numericos
+    max -> Define um numero máximo para campos numericos
+    minLength -> Minimo de caracteres
+    maxLength -> Maximo de caracteres
+    pattern -> Define um padrão/modelo da informação
+    required -> Define um campo obrigatório
+-->
